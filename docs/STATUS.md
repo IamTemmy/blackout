@@ -1,3 +1,7 @@
+# Current: batch reactors and ghost voting (engine v8)
+
+See [BATCH-GHOST-RELEASE.md](BATCH-GHOST-RELEASE.md) for current mechanics, all simulation targets and limitations. Earlier notes below are historical.
+
 # Current: reactor and comprehension repair (engine v7)
 
 See [REACTOR-AUDIT.md](REACTOR-AUDIT.md) for current behavior, final tests, simulation numbers and limits. Server odds passed; misleading dial animation fixed. 30-second choices, 20-second accusations, explained outcomes, default gesture-unlocked sound, contextual deduplicated banter. The following M3 release notes are historical:
