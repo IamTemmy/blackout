@@ -1,3 +1,7 @@
+# Current: reactor and comprehension repair (engine v7)
+
+See [REACTOR-AUDIT.md](REACTOR-AUDIT.md) for current behavior, final tests, simulation numbers and limits. Server odds passed; misleading dial animation fixed. 30-second choices, 20-second accusations, explained outcomes, default gesture-unlocked sound, contextual deduplicated banter. The following M3 release notes are historical:
+
 # Blackout rebuild — M3 playtest
 
 2026-10-16. User-approved replacement of the economic market with bluff-and-overload. Legacy preserved on GitHub branch legacy-market at 4a030fed0044c2aaeaa30935e799b99de16b95f3. Last Lift remains paused.
