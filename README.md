@@ -1,27 +1,18 @@
-# Blackout
+# BLACKOUT — A city of liars
 
-A ChatGPT Work-built multiplayer prototype for the Handshake AI Skills Studio challenge.
+Promise power. Pocket coins. Survive your reactor.
 
-## Run
+3–6 operators, ten fuel each, up to eight rounds. Public claims can lie; private fuel decides city survival. On failure, expose a rival or risk your own reactor. Eliminated players spectate and react. The richest surviving plant wins.
 
-Node 24 recommended. Install with `npm run install:ci`, generate/apply local D1 migrations per the Sites starter, and run `npm run dev`. The hosted deployment provisions D1 and applies tracked migrations.
+## Development
+Node 24. `npm run install:ci`, `npm test`, `npm run typecheck`, `npm run build`.
+`node --experimental-strip-types scripts/bluff-sweep.ts 10 4` simulates ten four-bot matches.
 
-## Check
+## Status
+See docs/STATUS.md for changes, simulation evidence and unmet acceptance criteria. The economic market is preserved on `legacy-market`. Review through issue #1 using [CODEX]/[CLAUDE] and exact SHAs.
 
-`npm test` checks game invariants and private projections. `npm run typecheck` checks TypeScript. `npm run build` produces a Cloudflare Worker bundle via Vinext.
+## Optional bot dialogue
+OPENAI_API_KEY is a server secret configured through Sites, never a client variable. OPENAI_BANTER_MODEL optionally overrides gpt-4.1-mini. Keys are not currently configured. The separate /api/banter request times out after 1.5s and always has canned character lines; gameplay never waits. API context contains only public information and fixed character names, not player identifiers, secret fuel or hidden commitments.
 
-## Playtest
-
-Create a room, share its code, and join in a second browser or device. No game account is required. Starting fills empty seats to four companies with bots; up to six can play. Open How to play for rules. Play a full session, refresh during a round, and check that your seat returns. Compare observations or pledges between devices; private bids must remain private until intentionally shared or revealed.
-
-## Scope and limitations
-
-Read [current status](docs/STATUS.md). This is an initial vertical slice, not a submission-ready release. Tests are not a substitute for real-device and human playtesting.
-
-## Review
-
-Use issue #1 with `[CODEX]` / `[CLAUDE]` and exact commit SHAs. Implementation owner: Codex in ChatGPT Work. Claude provides independent review. No concurrent implementation edits on main.
-
-## Provenance
-
-UI artwork is original SVG/CSS written for this project. Runtime dependencies are recorded in package.json and the lockfile; retained Sites starter components preserve their license notices. No third-party game assets or live AI calls. Game economics are fictional and simplified. Final challenge compliance review remains required before submission.
+## Assets
+Riverdale city art retained from this project's previous version. Six operator portraits are original inline SVG, drawn for this version. Sound is synthesized with Web Audio. No third-party character art or audio. Retained framework dependencies preserve their license notices.

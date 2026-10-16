@@ -1,13 +1,17 @@
-# Blackout — current playtest status
+# Blackout rebuild — M3 playtest
 
-2026-10-16; engine v5. Last Lift work paused at user request.
+2026-10-16. User-approved replacement of the economic market with bluff-and-overload. Legacy preserved on GitHub branch legacy-market at 4a030fed0044c2aaeaa30935e799b99de16b95f3. Last Lift remains paused.
 
-Implemented: varied per-room demand curves; public bounded forecasts; one independently seeded demand event revealed after all offers; no hidden-event access by bots; four-company minimum (bots fill vacant seats), up to six; tighter first hours; 30-second bot negotiation window; persistent promise history; first-seal promise lock; itemized accountability; all-connected-human ready gate; return home on reopening finished/obsolete rooms.
+M1: new server-authoritative phases, ten fuel, eight rounds, claims/hidden commits, shuffled six-event deck, accusations, escalating reactor spins, elimination, surviving richest wins. Minimum three companies; bots fill. M2: reveal choreography, gauge, city districts, focused reactor spin, meltdown effects, synthesized audio (off until user enables), reduced-motion support. M3: six original SVG portraits, lobby selection, three-step onboarding, deterministic fallback banter plus optional asynchronous server-only OpenAI adapter, final caught/escaped lies and spins recap.
 
-On blackout nobody wins. Each operator pays $40 times the greater of its broken-promise MW and its shortfall below equal demand share, capped at normal capacity. Unsold offered power is not a breach. Receipts do not establish intent or sole causation.
+## Deliberate rule resolutions
+- Opponents' remaining fuel is hidden: exact public fuel would reveal every secret commitment by subtraction. Own fuel is visible, final fuel is public.
+- Demand uses rising urgency constrained by remaining crew fuel per remaining round; ten fuel cannot support 1.6–2.4 per operator for eight rounds. Events modify the displayed pre-event range.
+- A vote is secret until verdict. All highest-vote ties expose; all-pass exposes nobody. A false accuser spins once per verdict; blackout spins are additional. Inspection reveals the bid but does not independently impose a spin.
+- Timeouts commit zero and claim zero unless already claimed; accusations timeout to pass. Eliminated players retain reactions but cannot vote/commit. Host migration remains supported.
+- Early completion accelerates bots, so matches are shorter than the requested 6–9 minutes. No artificial idle padding added.
 
-After a surviving six-hour match, a $3,000 pool goes to the most reliable credited supply: no broken promises, >=4 qualifying hours. A qualifying promise is >=70% of midpoint demand share; credit is min(promised, sold), excluding autopilot. Ties split the pool. Score includes bonus/fines.
-
-Validation: 17 engine tests, including hidden information, accounting, timing, event bounds, prize eligibility, and conservation. See BALANCE-V5.md for 2,800 simulations and limitations. Build/type checks recorded in release review. No browser or real-device QA in this development run. Request Claude independent live playtest by published SHA.
-
-Not implemented: investments, private contracts, hidden saboteur, best-of-three, live AI dialogue. Bots are rule-based and react to public information; they are not learning agents. Competition rules still require final verification before submission.
+## Validation and remaining limits
+Ten fixed-seed four-bot matches: 72 rounds, 28 failures (38.9%); meltdown in 8/10; mean 182.3s. 1,000 four-bot matches: 7,198 rounds, 2,707 failures (37.6%); meltdown in 827/1,000; mean 176.05s. Run `node --experimental-strip-types scripts/bluff-sweep.ts 10 4` (count, seats). Additional 1,000-match sweeps: three seats failed 41.6% of rounds (slightly above target), six seats failed 37.5%; average durations 156.65s and 204.13s respectively. These are bots, not human playtests.
+Ten tests cover secrecy, authority, invalid/duplicate input, reveal staging, ties, elimination, 100 complete seeded games, public-only banter context and hard 1.5-second fallback. TypeScript and production build checked. No browser-control capability available: separate-browser multiplayer, rendered no-scroll layout at 1280×720 / 390×844, and first-time comprehension remain unverified. CSS targets those viewports, not a verified acceptance pass.
+No OPENAI_API_KEY exists in hosting configuration. OpenAI Developers plugin is available but not installed; enable it to provision the server secret through its supported flow. Fallback is active, live API untested. Main gameplay never awaits the separate banter request. D1 CAS guards updates and one request per round/phase. Native OpenAI API reference checked: https://developers.openai.com/api/reference/resources/responses/methods/create . No runtime key is stored in source or sent to browser. Final challenge-compliance verification still required before submission.
