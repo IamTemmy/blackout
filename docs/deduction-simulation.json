@@ -1,0 +1,150 @@
+[
+  {
+    "matches": 1000,
+    "seats": 3,
+    "powerUses": 2625,
+    "powerUseFrequency": 0.875,
+    "powerTotals": {
+      "AUDIT": {
+        "dealt": 690,
+        "used": 662
+      },
+      "OVERCLOCK": {
+        "dealt": 785,
+        "used": 677
+      },
+      "SCAPEGOAT": {
+        "dealt": 765,
+        "used": 628
+      },
+      "INSURANCE": {
+        "dealt": 760,
+        "used": 658
+      }
+    },
+    "rounds": 7339,
+    "failedRounds": 2789,
+    "failureRate": 0.38002452650224827,
+    "blackoutRate": 0.09578961711404824,
+    "reachedRound7": 0.866,
+    "matchesWithMeltdown": 822,
+    "meltdownsPerMatch": 1.424,
+    "reachedRound6": 0.911,
+    "reachedRound8": 0.708,
+    "seat1EliminatedMatches": 549,
+    "seat1MeanEliminationRoundAmongEliminated": 5.965391621129326,
+    "seat1SurvivalRate": 0.45099999999999996,
+    "meanSeconds": 211.434
+  },
+  {
+    "matches": 1000,
+    "seats": 4,
+    "powerUses": 3509,
+    "powerUseFrequency": 0.87725,
+    "powerTotals": {
+      "AUDIT": {
+        "dealt": 922,
+        "used": 879
+      },
+      "OVERCLOCK": {
+        "dealt": 1064,
+        "used": 891
+      },
+      "SCAPEGOAT": {
+        "dealt": 993,
+        "used": 850
+      },
+      "INSURANCE": {
+        "dealt": 1021,
+        "used": 889
+      }
+    },
+    "rounds": 7690,
+    "failedRounds": 2843,
+    "failureRate": 0.36970091027308194,
+    "blackoutRate": 0.08530559167750325,
+    "reachedRound7": 0.939,
+    "matchesWithMeltdown": 761,
+    "meltdownsPerMatch": 1.684,
+    "reachedRound6": 0.964,
+    "reachedRound8": 0.856,
+    "seat1EliminatedMatches": 454,
+    "seat1MeanEliminationRoundAmongEliminated": 5.526431718061674,
+    "seat1SurvivalRate": 0.546,
+    "meanSeconds": 227.9435
+  },
+  {
+    "matches": 1000,
+    "seats": 5,
+    "powerUses": 4555,
+    "powerUseFrequency": 0.911,
+    "powerTotals": {
+      "AUDIT": {
+        "dealt": 1155,
+        "used": 1120
+      },
+      "OVERCLOCK": {
+        "dealt": 1310,
+        "used": 1147
+      },
+      "SCAPEGOAT": {
+        "dealt": 1241,
+        "used": 1105
+      },
+      "INSURANCE": {
+        "dealt": 1294,
+        "used": 1183
+      }
+    },
+    "rounds": 7925,
+    "failedRounds": 2872,
+    "failureRate": 0.362397476340694,
+    "blackoutRate": 0.07570977917981073,
+    "reachedRound7": 0.985,
+    "matchesWithMeltdown": 729,
+    "meltdownsPerMatch": 1.602,
+    "reachedRound6": 0.992,
+    "reachedRound8": 0.957,
+    "seat1EliminatedMatches": 361,
+    "seat1MeanEliminationRoundAmongEliminated": 5.698060941828255,
+    "seat1SurvivalRate": 0.639,
+    "meanSeconds": 232.959
+  },
+  {
+    "matches": 1000,
+    "seats": 6,
+    "powerUses": 5461,
+    "powerUseFrequency": 0.9101666666666667,
+    "powerTotals": {
+      "AUDIT": {
+        "dealt": 1403,
+        "used": 1360
+      },
+      "OVERCLOCK": {
+        "dealt": 1563,
+        "used": 1410
+      },
+      "SCAPEGOAT": {
+        "dealt": 1492,
+        "used": 1288
+      },
+      "INSURANCE": {
+        "dealt": 1542,
+        "used": 1403
+      }
+    },
+    "rounds": 7970,
+    "failedRounds": 2596,
+    "failureRate": 0.3257214554579674,
+    "blackoutRate": 0.06938519447929736,
+    "reachedRound7": 0.995,
+    "matchesWithMeltdown": 714,
+    "meltdownsPerMatch": 1.678,
+    "reachedRound6": 0.996,
+    "reachedRound8": 0.983,
+    "seat1EliminatedMatches": 322,
+    "seat1MeanEliminationRoundAmongEliminated": 6.037267080745342,
+    "seat1SurvivalRate": 0.6779999999999999,
+    "meanSeconds": 231.8805
+  }
+]
