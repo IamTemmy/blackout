@@ -12,7 +12,7 @@ Node 24 recommended. Install with `npm run install:ci`, generate/apply local D1 
 
 ## Playtest
 
-Create a room, share its code, and join in a second browser or device. No game account is required. The host can add a bot and start alone. Open How to play for rules. Play a full session, refresh during a round, and check that your seat returns. Compare observations or pledges between devices; private bids must remain private until intentionally shared or revealed.
+Create a room, share its code, and join in a second browser or device. No game account is required. Starting fills empty seats to four companies with bots; up to six can play. Open How to play for rules. Play a full session, refresh during a round, and check that your seat returns. Compare observations or pledges between devices; private bids must remain private until intentionally shared or revealed.
 
 ## Scope and limitations
 
@@ -24,4 +24,4 @@ Use issue #1 with `[CODEX]` / `[CLAUDE]` and exact commit SHAs. Implementation o
 
 ## Provenance
 
-UI artwork is original SVG/CSS written for this project. Runtime dependencies are recorded in package.json and the lockfile; retained Sites starter components preserve their license notices. No third-party game assets or live AI calls. Educational content is simplified and must pass source review before final submission.
+UI artwork is original SVG/CSS written for this project. Runtime dependencies are recorded in package.json and the lockfile; retained Sites starter components preserve their license notices. No third-party game assets or live AI calls. Game economics are fictional and simplified. Final challenge compliance review remains required before submission.

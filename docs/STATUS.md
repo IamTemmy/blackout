@@ -1,9 +1,13 @@
-# Blackout v4 — October 15, 2026
+# Blackout — current playtest status
 
-Public Promise control now sits above Seal. Seal never overwrites a promise. Settlement labels no promise, changed quantities, the settled hour, automatic offers and zero sales. Emergency reserve explicitly explains optional supply, increased output limit, no bonus/guaranteed sales, activation heat and one-use cost. Removed decorative route lines; city displays actual settled delivered/needed supply, explicitly previous-hour during bidding. District illumination is citywide illustrative stress, not a physical district simulation.
+2026-10-16; engine v5. Last Lift work paused at user request.
 
-Bots now have distinct pricing/output behaviors. Steady supplier uses median observed prices/capped multi-company quotes; Price hunter checks nearby observed-price candidates and discounts previously broken promises; Margin player may announce full capacity and actually cool, and ignores calls for help. Public pledges are retained after sealing. A special two-company repeat/undercut forecast with seeded quote variation handles residual demand. All use public information, never sealed rival offers. Equal-price bands split integer MW proportionally; a rotating tie order allocates only residual indivisible MW. Bot removal/re-add names match company and traits use the least-used bot personality.
+Implemented: varied per-room demand curves; public bounded forecasts; one independently seeded demand event revealed after all offers; no hidden-event access by bots; four-company minimum (bots fill vacant seats), up to six; tighter first hours; 30-second bot negotiation window; persistent promise history; first-seal promise lock; itemized accountability; all-connected-human ready gate; return home on reopening finished/obsolete rooms.
 
-19 tests and TypeScript pass. docs/BALANCE.md records the 900-game adaptive sweep and unresolved difficulty/survival issues. This update improves strategy variety and readability; it is not final balance approval. Claude-authored/Codex-authored policy exhibition is deferred per user clarification; no live assistant-versus-assistant match occurred.
+On blackout nobody wins. Each operator pays $40 times the greater of its broken-promise MW and its shortfall below equal demand share, capped at normal capacity. Unsold offered power is not a breach. Receipts do not establish intent or sole causation.
 
-Create a fresh room (version4). Native deployment/build evidence and exact SHA are recorded in issue#1. Interactive browser/phone QA unavailable; tests do not replace human playtests. No imports, investor targets or real-world grid claims.
+After a surviving six-hour match, a $3,000 pool goes to the most reliable credited supply: no broken promises, >=4 qualifying hours. A qualifying promise is >=70% of midpoint demand share; credit is min(promised, sold), excluding autopilot. Ties split the pool. Score includes bonus/fines.
+
+Validation: 17 engine tests, including hidden information, accounting, timing, event bounds, prize eligibility, and conservation. See BALANCE-V5.md for 2,800 simulations and limitations. Build/type checks recorded in release review. No browser or real-device QA in this development run. Request Claude independent live playtest by published SHA.
+
+Not implemented: investments, private contracts, hidden saboteur, best-of-three, live AI dialogue. Bots are rule-based and react to public information; they are not learning agents. Competition rules still require final verification before submission.
