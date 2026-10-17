@@ -1,0 +1,202 @@
+[
+  {
+    "bots": {
+      "matches": 1000,
+      "seats": 3,
+      "powerUses": 2640,
+      "powerUseFrequency": 0.88,
+      "powerTotals": {
+        "AUDIT": {
+          "dealt": 690,
+          "used": 664
+        },
+        "OVERCLOCK": {
+          "dealt": 785,
+          "used": 678
+        },
+        "SCAPEGOAT": {
+          "dealt": 765,
+          "used": 630
+        },
+        "INSURANCE": {
+          "dealt": 760,
+          "used": 668
+        }
+      },
+      "rounds": 7459,
+      "failedRounds": 2855,
+      "failureRate": 0.38275908298699557,
+      "blackoutRate": 0.09880681056441883,
+      "reachedRound7": 0.884,
+      "matchesWithMeltdown": 784,
+      "meltdownsPerMatch": 1.234,
+      "reachedRound6": 0.924,
+      "reachedRound8": 0.761,
+      "seat1EliminatedMatches": 493,
+      "seat1MeanEliminationRoundAmongEliminated": 5.750507099391481,
+      "seat1SurvivalRate": 0.507,
+      "meanSeconds": 219.1785
+    },
+    "honest": {
+      "matches": 1000,
+      "seats": 3,
+      "policy": "one honest fair-share seat, rotating positions; suspicion-only accusations; no private rival data",
+      "tieAdjustedWinRate": 0.4761666666666662,
+      "startingSeatChance": 0.3333333333333333,
+      "survivalRate": 0.765,
+      "winRateGivenSurvival": 0.6224400871459689,
+      "randomSurvivorChance": 0.61023965141612,
+      "reachedRound7": 0.892
+    }
+  },
+  {
+    "bots": {
+      "matches": 1000,
+      "seats": 4,
+      "powerUses": 3559,
+      "powerUseFrequency": 0.88975,
+      "powerTotals": {
+        "AUDIT": {
+          "dealt": 922,
+          "used": 886
+        },
+        "OVERCLOCK": {
+          "dealt": 1064,
+          "used": 900
+        },
+        "SCAPEGOAT": {
+          "dealt": 993,
+          "used": 865
+        },
+        "INSURANCE": {
+          "dealt": 1021,
+          "used": 908
+        }
+      },
+      "rounds": 7860,
+      "failedRounds": 2894,
+      "failureRate": 0.36819338422391856,
+      "blackoutRate": 0.08587786259541985,
+      "reachedRound7": 0.969,
+      "matchesWithMeltdown": 747,
+      "meltdownsPerMatch": 1.366,
+      "reachedRound6": 0.982,
+      "reachedRound8": 0.927,
+      "seat1EliminatedMatches": 381,
+      "seat1MeanEliminationRoundAmongEliminated": 5.4619422572178475,
+      "seat1SurvivalRate": 0.619,
+      "meanSeconds": 234.401
+    },
+    "honest": {
+      "matches": 1000,
+      "seats": 4,
+      "policy": "one honest fair-share seat, rotating positions; suspicion-only accusations; no private rival data",
+      "tieAdjustedWinRate": 0.3283333333333332,
+      "startingSeatChance": 0.25,
+      "survivalRate": 0.765,
+      "winRateGivenSurvival": 0.4291938997821349,
+      "randomSurvivorChance": 0.4039215686274506,
+      "reachedRound7": 0.974
+    }
+  },
+  {
+    "bots": {
+      "matches": 1000,
+      "seats": 5,
+      "powerUses": 4610,
+      "powerUseFrequency": 0.922,
+      "powerTotals": {
+        "AUDIT": {
+          "dealt": 1155,
+          "used": 1128
+        },
+        "OVERCLOCK": {
+          "dealt": 1310,
+          "used": 1181
+        },
+        "SCAPEGOAT": {
+          "dealt": 1241,
+          "used": 1107
+        },
+        "INSURANCE": {
+          "dealt": 1294,
+          "used": 1194
+        }
+      },
+      "rounds": 7970,
+      "failedRounds": 2878,
+      "failureRate": 0.36110414052697615,
+      "blackoutRate": 0.07490589711417817,
+      "reachedRound7": 0.995,
+      "matchesWithMeltdown": 695,
+      "meltdownsPerMatch": 1.227,
+      "reachedRound6": 0.996,
+      "reachedRound8": 0.987,
+      "seat1EliminatedMatches": 273,
+      "seat1MeanEliminationRoundAmongEliminated": 5.278388278388278,
+      "seat1SurvivalRate": 0.727,
+      "meanSeconds": 234.801
+    },
+    "honest": {
+      "matches": 1000,
+      "seats": 5,
+      "policy": "one honest fair-share seat, rotating positions; suspicion-only accusations; no private rival data",
+      "tieAdjustedWinRate": 0.20355000000000012,
+      "startingSeatChance": 0.2,
+      "survivalRate": 0.779,
+      "winRateGivenSurvival": 0.2612965340179719,
+      "randomSurvivorChance": 0.2626444159178427,
+      "reachedRound7": 0.997
+    }
+  },
+  {
+    "bots": {
+      "matches": 1000,
+      "seats": 6,
+      "powerUses": 5550,
+      "powerUseFrequency": 0.925,
+      "powerTotals": {
+        "AUDIT": {
+          "dealt": 1403,
+          "used": 1376
+        },
+        "OVERCLOCK": {
+          "dealt": 1563,
+          "used": 1424
+        },
+        "SCAPEGOAT": {
+          "dealt": 1492,
+          "used": 1308
+        },
+        "INSURANCE": {
+          "dealt": 1542,
+          "used": 1442
+        }
+      },
+      "rounds": 7995,
+      "failedRounds": 2610,
+      "failureRate": 0.32645403377110693,
+      "blackoutRate": 0.07004377736085053,
+      "reachedRound7": 1,
+      "matchesWithMeltdown": 685,
+      "meltdownsPerMatch": 1.213,
+      "reachedRound6": 1,
+      "reachedRound8": 0.995,
+      "seat1EliminatedMatches": 219,
+      "seat1MeanEliminationRoundAmongEliminated": 5.835616438356165,
+      "seat1SurvivalRate": 0.781,
+      "meanSeconds": 232.182
+    },
+    "honest": {
+      "matches": 1000,
+      "seats": 6,
+      "policy": "one honest fair-share seat, rotating positions; suspicion-only accusations; no private rival data",
+      "tieAdjustedWinRate": 0.1824833333333333,
+      "startingSeatChance": 0.16666666666666666,
+      "survivalRate": 0.831,
+      "winRateGivenSurvival": 0.21959486562374644,
+      "randomSurvivorChance": 0.20770156438026394,
+      "reachedRound7": 1
+    }
+  }
+]
