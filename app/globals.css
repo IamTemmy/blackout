@@ -27,3 +27,5 @@
 .seat .vote-status{position:static}.seat-banter{pointer-events:auto}.power-announcements:empty{display:none}
 
 .banter-debug{position:fixed;bottom:3px;right:6px;z-index:35;font-size:10px;color:#c1cbd2;background:#0c1825;border:1px solid #3e5361;border-radius:5px;max-width:90vw;padding:3px 6px}.banter-debug>div{padding:8px;line-height:1.6}.phase-accuse.result-blackout .phase-banner b{color:#ff8872}
+
+.verdict-dials{display:flex;justify-content:center;gap:3px}.verdict-dials>div{text-align:center;min-width:0}.verdict-dials:has(>div:nth-child(2)) .reactor{width:clamp(44px,6vw,80px);height:clamp(44px,6vw,80px)}
